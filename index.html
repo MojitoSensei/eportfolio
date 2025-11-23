@@ -75,6 +75,27 @@
                     </div>
                 </div>
             </div>
+            <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Personal Project</span>
+                        <h4 class="timeline-title">Self-Hosted AI Infrastructure & Chatbot</h4>
+                        <p class="timeline-subtitle">Home Lab - Distributed System Architecture</p>
+                        <div class="timeline-text">
+                            <ul>
+                                <li><strong>Objective:</strong> Designed a private, web-accessible AI chat interface decoupling the heavy processing (inference) from the web hosting.</li>
+                                <li><strong>Distributed Architecture:</strong>
+                                    <ul>
+                                        <li><strong>Backend (Inference):</strong> Running <strong>LM Studio</strong> on a high-performance Desktop PC to host LLMs via a local API server.</li>
+                                        <li><strong>Frontend (Web):</strong> Hosted on a <strong>TrueNAS</strong> server, acting as the always-on client interface.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Model Management:</strong> Integrated a dynamic selector allowing users to switch between models like <strong>Gemma 3</strong> and <strong>Mistral</strong> in real-time.</li>
+                                <li><strong>Network Challenges:</strong> Engineered the communication bridge between the TrueNAS server and the Desktop API (LAN routing, Firewall configuration) to ensure low-latency responses.</li>
+                                <li><strong>Public Access & Security:</strong> Configured a custom <strong>Domain Name</strong> and DNS routing to make the local service accessible via the web securely.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <section id="mobility" class="tab-content">
@@ -117,13 +138,18 @@
             <ul class="animated fade-in-up" style="list-style: none; padding-left: 0;">
                 <li style="margin-bottom: 15px;">
                     <i class="fas fa-server" style="color: var(--accent-turquoise); margin-right: 10px;"></i>
-                    <strong>Home Lab & Hardware:</strong> 
-                    Unlike software development, my true passion lies in <strong>infrastructure</strong>. I genuinely enjoy the physical aspect of IT: assembling servers, selecting components, and maintaining the hardware that powers my Home Lab.
+                    <strong>Home Lab & Infrastructure:</strong> 
+                    My passion lies in building reliable environments. I enjoy maintaining my hardware and managing my personal <strong>TrueNAS</strong> server. I implemented <strong>VPN solutions</strong> (WireGuard/OpenVPN) to ensure secure remote access to my network services.
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <i class="fas fa-microchip" style="color: var(--accent-turquoise); margin-right: 10px;"></i>
+                    <strong>Resource Optimization & ARM:</strong> 
+                    I love pushing hardware limits. For instance, I successfully deployed and hosted a multiplayer game server (Minecraft) directly on an <strong>Android smartphone</strong> using Linux containers (Termux), creating a functional environment on restricted ARM architecture.
                 </li>
                 <li>
                     <i class="fas fa-terminal" style="color: var(--accent-turquoise); margin-right: 10px;"></i>
-                    <strong>System Administration & Self-Hosting:</strong> 
-                    I spend my free time managing my personal <strong>Home Lab</strong>. I love experimenting with virtualization (Proxmox/Hyper-V), configuring Linux servers, and self-hosting services (NAS, Media Servers, Ad-blockers) to understand the nuances of network traffic and security.
+                    <strong>Self-Hosting:</strong> 
+                    I experiment with virtualization (Proxmox/Hyper-V) and self-host various services (Media Servers, Ad-blockers) to deepen my understanding of network traffic management and data privacy.
                 </li>
             </ul>
         </section>

@@ -34,14 +34,16 @@ body {
     flex-wrap: wrap;
 }
 .tab-nav a {
-    padding: 15px 20px;
+    padding: 15px 10px; /* J'ai réduit le padding horizontal de 20px à 10px */
     color: var(--light-grey);
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+    font-size: 0.95em; /* J'ai réduit légèrement la taille du texte */
     border-bottom: 4px solid transparent;
     transition: all 0.3s ease;
     flex-grow: 1;
+    white-space: nowrap; /* Empêche le texte de se casser à l'intérieur du bouton */
 }
 .tab-nav a:hover {
     background-color: rgba(26, 188, 156, 0.1);
